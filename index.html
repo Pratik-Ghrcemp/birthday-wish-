@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Tanmay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Titan+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Sriracha&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Ganpati Image -->
+        <div class="ganpati-icon">
+            <img src="Ganpathi.png" alt="Lord Ganesha">
+        </div>
+        
+        <!-- Flags -->
+        <div class="flag__birthday">
+            <img src="1.png" alt="Flag" class="flag__left">
+            <img src="1.png" alt="Flag" class="flag__right">
+        </div>
+        
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Left Side -->
+            <div class="left">
+                <div class="title">
+                    <h1 class="happy">
+                        <span style="--t:4s">H</span>
+                        <span style="--t:4.2s">a</span>
+                        <span style="--t:4.4s">p</span>
+                        <span style="--t:4.6s">p</span>
+                        <span style="--t:4.8s">y</span>
+                    </h1>
+                    <h1 class="birthday">
+                        <span style="--t:5s">B</span>
+                        <span style="--t:5.2s">i</span>
+                        <span style="--t:5.4s">r</span>
+                        <span style="--t:5.6s">t</span>
+                        <span style="--t:5.8s">h</span>
+                        <span style="--t:6s">d</span>
+                        <span style="--t:6.2s">a</span>
+                        <span style="--t:6.4s">y</span>
+                    </h1>
+                    <div class="hat">
+                        <img src="hat.png" alt="Hat">
+                    </div>
+                </div>
+                
+                <div class="date__of__birth">
+                    <span></span>
+                </div>
+                
+                <div class="btn">
+                    <button id="btn__letter">
+                        <div class="mail">
+                            Click Here Tanmay
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Right Side -->
+            <div class="right">
+                <div class="box__account">
+                    <div class="image">
+                        <img src="1 img.png" alt="Tanmay">
+                    </div>
+                    <div class="name">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Dear Tanmay</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="balloon balloon_one">
+                        <img src="balloon1.png" alt="Balloon">
+                    </div>
+                    <div class="balloon balloon_two">
+                        <img src="balloon2.png" alt="Balloon">
+                    </div>
+                </div>
+                
+                <!-- Circular Text - Fixed -->
+                <div class="cricle">
+                    <div class="text__cricle">
+                        <p>
+                            <span style="--i:1">h</span>
+                            <span style="--i:2">a</span>
+                            <span style="--i:3">p</span>
+                            <span style="--i:4">p</span>
+                            <span style="--i:5">y</span>
+                            <span style="--i:6">-</span>
+                            <span style="--i:7">b</span>
+                            <span style="--i:8">i</span>
+                            <span style="--i:9">r</span>
+                            <span style="--i:10">t</span>
+                            <span style="--i:11">h</span>
+                            <span style="--i:12">d</span>
+                            <span style="--i:13">a</span>
+                            <span style="--i:14">y</span>
+                            <span style="--i:15">-</span>
+                        </p>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Music Player - IMPROVED -->
+        <div class="music-player">
+            <button class="music-btn" id="playMusic">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="music-btn" id="pauseMusic" style="display: none;">
+                <i class="fas fa-pause"></i>
+            </button>
+            <audio id="birthdayAudio" preload="auto">
+                <source src="https://www.dropbox.com/scl/fi/eb1e4lisfxzjhry119pgy/Happy-Birthday-Aww-Bollywood-Hindi-Movie-ABCD2.wav?rlkey=alogifbgq4s5a3ewjcpgcebuh&st=pfwhk5vj&raw=1" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Memories Button -->
+        <button class="memories-btn" id="memoriesBtn">
+            <i class="fas fa-images"></i>
+            Our Memories
+        </button>
+
+        <!-- Decorations -->
+        <div class="decorate_star star1" style="--t:15s"></div>
+        <div class="decorate_star star2" style="--t:15.2s"></div>
+        <div class="decorate_star star3" style="--t:15.4s"></div>
+        <div class="decorate_star star4" style="--t:15.6s"></div>
+        <div class="decorate_star star5" style="--t:15.8s"></div>
+        
+        <div class="decorate_flower decorate_flower--one" style="--t:15s">
+            <img src="decorate_flower.png" alt="Flower">
+        </div>
+        <div class="decorate_flower decorate_flower--two" style="--t:15.3s">
+            <img src="decorate_flower.png" alt="Flower">
+        </div>
+        <div class="decorate_flower decorate_flower--three" style="--t:15.6s">
+            <img src="decorate_flower.png" alt="Flower">
+        </div>
+        
+        <div class="decorate_bottom">
+            <img src="decorate.png" alt="Decoration">
+        </div>
+        
+        <div class="smiley__icon">
+            <img src="smiley_icon.png" alt="Smiley">
+        </div>
+
+        <!-- Popup -->
+        <div class="boxMail" id="popup">
+            <i class="fa-solid fa-xmark close-button" id="closePopup"></i>
+            <div class="boxMail-container">
+                <div class="card1">
+                    <div class="userImg">
+                        <img src="unnamed.png" alt="Tanmay">
+                    </div>
+                    <h4 class="username">To: Tanmay 💖</h4>
+                    <h3>Happy Birthday</h3>
+                    <div class="imageCute">
+                        <img src="heart_letter.png" alt="Heart">
+                    </div>
+                </div>
+                
+                <div class="card2">
+                    <div class="card2-content">
+                        
+                        <div class="message-text">
+                          Happy Birthday, Tanmay! 🥳🎂 From our first-year hello to this third-year bond, the journey has been special. Your humble nature, positive energy, and how you gel with everyone make you our group’s star. ⭐ This small gift—a luxury fragrance—is more than a gift; it’s a scent to linger in memories. May our bond stay fresh and long-lasting. 🌿 Wishing you success at every step and dreams fulfilled. 🚀 Whenever needed, I’ll be there like a brother. 🙌 Stay happy, keep smiling, make memories. Stay confident, stay legendary, keep shining, Boss! ✨
+                        </div>
+                        <div class="imageCute2">
+                            <img src="love.png" alt="Love">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Memories Gallery - IMPROVED -->
+        <div class="memories-gallery" id="memoriesGallery">
+            <div class="gallery-header">
+                <h2 class="gallery-title">Our Memories</h2>
+                <i class="fas fa-times gallery-close" id="closeGallery"></i>
+            </div>
+            
+            <div class="gallery-container">
+                <div class="gallery-carousel" id="galleryCarousel">
+                    <div class="gallery-slide">
+                        <img src="2.png" alt="Memory 1">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="3.png" alt="Memory 2">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="4.png" alt="Memory 3">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="5.png" alt="Memory 4">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="6.png" alt="Memory 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="9.png" alt="Memory 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="11.png" alt="Memory 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="12.png" alt="Memory 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="15.png" alt="Memory 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="16.png" alt="Memory 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="17.png" alt="Memory 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="18.png" alt="Memory 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="19.png" alt="Memory 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="20.png" alt="Memory 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="22.png" alt="Memory 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="23 (1).png" alt="Memory 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="24.png" alt="Memory 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="25.png" alt="Memory 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="26.png" alt="Memory 5">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="27.png" alt="Memory 5">
+                    </div>
+                </div>
+                
+                <div class="gallery-nav">
+                    <div class="gallery-nav-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="gallery-nav-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-indicators" id="galleryIndicators">
+                <!-- Indicators will be generated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
